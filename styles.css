@@ -1,88 +1,33 @@
-* {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    margin: 44px 0 144px 76px;
-
-}
-
-.link-header {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 100%;
-    color: #17233D;
-    cursor: pointer;
-    margin-right: 23px;
-
-}
-
-.button-header {
-    background: #6fbf44;
-    border-radius: 10.5px;
-    width: 124px;
-    height: 51px;
-    border: none;
-    font-weight: 420px;
-    font-size: 14px;
-    line-height: 100%;
-    color: #ffffff;
-
-
-}
-
-.logo-image {
-    width: 595.18px;
-    height: 500px;
-    margin-left: 125px;
-    left: 121px;
-    display: inline-block;
-
-}
-
-main {
-    display: inline-block;
-    margin-left: 86px;
-
-
-}
-
-
-h1 {
-    width: 582px;
-    height: 164px;
-    top: 342px;
-    left: 801px;
-    font-weight: 700;
-    font-size: 62px;
-    line-height: 82px;
-    letter-spacing: 0.6px;
-    color: #161a49;
-
-
-}
-
-p {
-    font-weight: 400;
-    font-size: 20px;
-    color: #4b505a;
-    width: 490px;
-    height: 99px;
-    top: 553px;
-    left: 801px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-
-
-}
-
-.button-main {
-    width: 40px;
-    height: 239px;
-    color: #6fbf44;
-    font-weight: 400;
-
-}
+:root { font-family: Poppins, sans-serif; color: #17233d; background: #fff; scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 3px solid #357d1a; outline-offset: 6px; border-radius: 4px; }
+header, main, footer { width: min(1200px, calc(100% - 48px)); margin-inline: auto; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 32px; }
+.brand { font-weight: 700; letter-spacing: -.7px; font-size: 22px; }
+.brand span { color: #357d1a; }
+nav { display: flex; align-items: center; gap: 28px; font-size: 14px; }
+.button-header { display: inline-block; background: #357d1a; border-radius: 10px; padding: 14px 22px; color: white; font-weight: 600; }
+.button-header:hover { background: #285f13; }
+.hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 56px; padding-block: 72px 100px; }
+.logo-image { display: block; width: 100%; height: auto; }
+h1 { font-size: clamp(36px, 4.5vw, 62px); line-height: 1.25; letter-spacing: -.8px; margin: 16px 0 24px; color: #161a49; }
+p { font-size: 17px; line-height: 1.8; color: #4b505a; }
+.eyebrow { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.6px; color: #357d1a; }
+.button-main { color: #357d1a; display: inline-flex; gap: 14px; align-items: center; font-weight: 600; margin-top: 16px; }
+.button-main:hover { text-decoration: underline; }
+.details { border-top: 1px solid #e4e9e0; padding-block: 64px; scroll-margin-top: 24px; }
+h2 { font-size: clamp(26px, 3vw, 36px); line-height: 1.3; letter-spacing: -.6px; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin-top: 40px; }
+.steps article > span { color: #357d1a; font-weight: 600; }
+h3 { margin-bottom: 12px; font-size: 18px; }
+.steps p { font-size: 15px; }
+.explore { padding: 40px; border-radius: 20px; background: #f2f7ef; margin-bottom: 64px; scroll-margin-top: 24px; }
+.explore h2 { margin-top: 0; }
+footer { padding-block: 24px; border-top: 1px solid #e4e9e0; font-size: 12px; color: #4b505a; }
+.skip-link { position: fixed; top: 12px; left: 12px; padding: 12px; z-index: 10; background: white; transform: translateY(-200%); }
+.skip-link:focus { transform: none; }
+@media (max-width: 800px) { .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 32px 64px; } .logo-image { max-width: 440px; margin-inline: auto; } .hero-copy { max-width: 540px; } .steps { grid-template-columns: 1fr; gap: 20px; } }
+@media (max-width: 480px) { header, main, footer { width: calc(100% - 36px); } header { flex-wrap: wrap; gap: 16px; padding-block: 24px; } nav { width: 100%; justify-content: space-between; gap: 12px; } .explore { padding: 24px; } }
+@media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
