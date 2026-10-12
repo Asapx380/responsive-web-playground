@@ -33,3 +33,7 @@ Este repositório é um playground de estudo. Para projetos com deploy e stack m
 ## Licença
 
 MIT
+
+## Validação visual
+
+Confira o menu e os links internos pelo teclado, o layout em telas de celular e computador, a ampliação do texto e a preferência de movimento reduzido. A página apresenta um exercício de interface; não contém autenticação, cadastro ou envio de formulário.
